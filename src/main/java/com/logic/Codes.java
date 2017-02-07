@@ -108,7 +108,8 @@ public class Codes {
                 return "Insufficient Storage";
             case 510:
                 return "Not Extended";
-            default:  return "nothing as it is not present in the list of valid HTTP codes";
+            default:
+                return "nothing as it is not present in the list of valid HTTP codes";
         }
     }
 }
