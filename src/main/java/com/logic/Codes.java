@@ -109,7 +109,7 @@ public class Codes {
             case 510:
                 return "Not Extended";
             default:
-                return "nothingx as it is not present in the list of valid HTTP codes";
+                return "nothing as it is not present in the list of valid HTTP codes";
         }
     }
 }
