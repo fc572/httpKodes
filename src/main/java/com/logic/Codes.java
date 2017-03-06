@@ -1,5 +1,8 @@
 package com.logic;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Codes {
 
      public String workOutMeaningOfCode(String code){
