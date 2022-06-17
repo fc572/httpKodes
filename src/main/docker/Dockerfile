@@ -1,4 +1,5 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM frolvlad/alpine-java
+EXPOSE 8080
 VOLUME /tmp
 COPY httpcodes-1.0-SNAPSHOT.jar app.jar
 RUN sh -c 'touch /app.jar'
