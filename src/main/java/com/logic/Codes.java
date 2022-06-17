@@ -85,6 +85,8 @@ public class Codes {
                 return "Requested Range Not Satisfiable";
             case 417:
                 return "Expectation Failed";
+            case 418:
+                return "I'm a TeaPot!";
             case 422:
                 return "Unprocessable Entity";
             case 423:

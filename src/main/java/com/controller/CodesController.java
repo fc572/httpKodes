@@ -23,7 +23,10 @@ public class CodesController {
     }
 
     @RequestMapping("/codeswithheaders")
-    public ResponseEntity<String> codesWithHeaders(@RequestParam(value="codestatus") String codestatus){
+    public ResponseEntity<String> codesWithHeaders(@RequestParam(value="codestatus") String codestatus, Model model){
+        String message = rispostaHttpStatus.responseEntity(codestatus).toString();
+        model.addAttribute("message", message);
+        model.addAttribute("codestatus", codestatus);
         return rispostaHttpStatus.responseEntity(codestatus);
     }
 }
