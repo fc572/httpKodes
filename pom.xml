@@ -11,10 +11,26 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.1.RELEASE</version>
+        <version>2.7.1</version>
     </parent>
 
+    <properties>
+        <java.version>1.8</java.version>
+        <docker.image.prefix>fc572</docker.image.prefix>
+        <spring-cloud-gcp.version>1.2.5.RELEASE</spring-cloud-gcp.version>
+        <spring-boot-release.version>2.3.4.RELEASE</spring-boot-release.version>
+    </properties>
+
+
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.integration</groupId>
+            <artifactId>spring-integration-core</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -33,12 +49,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <docker.image.prefix>fc572</docker.image.prefix>
-    </properties>
 
 
     <build>

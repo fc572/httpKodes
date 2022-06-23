@@ -3,10 +3,12 @@ package com.logic;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.util.MultiValueMap;
 
 import java.util.Arrays;
 
+@Service
 public class RispostaHttpStatus {
 
     public ResponseEntity<String> responseEntity(String code) {
